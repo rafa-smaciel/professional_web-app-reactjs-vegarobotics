@@ -21,6 +21,13 @@ export const LeftSide = styled.div`
         width: 180px;
         height: 180px;
     }
+
+    @media (max-width: 580px){
+        #logo {
+            width: 70%;
+            height: auto;
+        }
+    }
 `
 export const RightSide = styled.div`
     width: 50%;
