@@ -5,9 +5,14 @@ import * as S from './styles';
 function Video() {
     return (
         <S.Container>
-        <video id="videoBanner" className="video-banner" autoPlay muted loop>
-           <source src={VideoS} type='video/mp4'></source>
-        </video>
+            <S.Text>
+                {/* <a>Hello World</a> */}
+            </S.Text>
+            <S.Video>
+                <video id="videoBanner" className="video-banner" autoPlay muted loop>
+                    <source src={VideoS} type='video/mp4'></source>
+                </video>
+            </S.Video>
         </S.Container>
     );
 }

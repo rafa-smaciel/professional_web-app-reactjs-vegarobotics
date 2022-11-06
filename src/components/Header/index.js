@@ -13,7 +13,7 @@ function Header() {
         <img src={logo} alt="VegaRobotics" id="logo"/>
         </a>
       </S.LeftSide>
-      <Link to="/vixem">BETA</Link>
+        <Link to="/vixem">BETA</Link>
       <S.RightSide>
         <a href="https://wa.me/+551151998949" target="_blank" rel="noreferrer" >
            <img src={whatsapp} alt="whatapp" />
