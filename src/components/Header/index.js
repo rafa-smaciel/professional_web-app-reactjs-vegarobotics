@@ -13,9 +13,9 @@ function Header() {
         <img src={logo} alt="VegaRobotics" />
         </a>
       </S.LeftSide>
-      <Link to="/vixem">VIXEM</Link>
+      <Link to="/vixem">BETA</Link>
       <S.RightSide>
-        <a href="https://wa.me/+551151998949">
+        <a href="https://wa.me/+551151998949" target="_blank" rel="noreferrer">
            <img src={informações} alt="Informações" />
         </a>
       </S.RightSide>
