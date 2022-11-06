@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import * as S from './styles';
 
 import logo from '../../assets/VEGA_6.png';
-import informações from '../../assets/Contatos-edit.png';
+import whatsapp from '../../assets/whatsapp.png';
 
 function Header() {
   return (
@@ -16,7 +16,7 @@ function Header() {
       <Link to="/vixem">BETA</Link>
       <S.RightSide>
         <a href="https://wa.me/+551151998949" target="_blank" rel="noreferrer">
-           <img src={informações} alt="Informações" />
+           <img src={whatsapp} alt="whatapp" />
         </a>
       </S.RightSide>
     </S.Container>

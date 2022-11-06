@@ -28,9 +28,10 @@ export const RightSide = styled.div`
     justify-content: flex-end;
 
     img {
-        width: 150px;
+        width: 50px;
         padding-top: 0px;
-        padding-right: 0px;
+        padding-right: 20px;
+
     }
 
     button {
@@ -46,7 +47,7 @@ export const RightSide = styled.div`
         margin: 0 10px;
 
     &:hover{
-        color: #FFFFFF;
+        transition: opacity .3s;
     }
 
     span {
