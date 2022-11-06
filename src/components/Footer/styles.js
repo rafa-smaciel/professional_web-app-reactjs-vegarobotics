@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container= styled.div`
     width: 100%;
-    height: 100px;
+    height: 55px;
     background: #000000;
     border-top: 5px solid #891A14;
     justify-content: space-around;

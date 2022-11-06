@@ -12,6 +12,7 @@ import {
 } from "@mediapipe/face_mesh/face_mesh";
 import { drawConnectors } from "@mediapipe/drawing_utils/drawing_utils";
 import { Camera } from "@mediapipe/camera_utils/camera_utils";
+import * as S from './styles';
 
 const MPFaceMesh = () => {
   const webcamRef = useRef(null);
@@ -39,8 +40,7 @@ const MPFaceMesh = () => {
         onFrame: async () => {
           await faceMesh.send({ image: webcamRef.current.video });
         },
-        width: 1280,
-        height: 720,
+          // width: 100
       });
       camera.start();
     }
@@ -66,6 +66,7 @@ const MPFaceMesh = () => {
     );
     if (results.multiFaceLandmarks) {
       console.log('Found face');
+      
       for (const landmarks of results.multiFaceLandmarks) {
         drawConnectors(canvasCtx, landmarks, FACEMESH_TESSELATION, {
           color: "#C0C0C070",
@@ -95,38 +96,42 @@ const MPFaceMesh = () => {
   };
 
   return (
-    <div>
-      <Webcam
+    <S.Container>
+      <Webcam 
+        id='webcam'
         audio={false}
         mirrored={true}
         ref={webcamRef}
-        style={{
-          position: "absolute",
-          marginLeft: "auto",
-          marginRight: "auto",
-          left: "0",
-          right: "0",
-          textAlign: "center",
-          zindex: 9,
-          width: 1280,
-          height: 720,
-        }}
+        // style={{
+        //   display: "flex",
+        //   // position: "absolute",
+        //   marginLeft: 0,
+        //   marginRight: 0,
+        //   left: 100,
+        //   right: 100,
+        //   textAlign: "center",
+        //   zindex: 9,
+        //   // width: 100,
+        // //   height: "auto",
+        // }}
       />
-      <canvas
+      <canvas 
+        id='webcam'
         ref={canvasRef}
-        style={{
-          position: "absolute",
-          marginLeft: "auto",
-          marginRight: "auto",
-          left: "0",
-          right: "0",
-          textAlign: "center",
-          zindex: 9,
-          width: 1280,
-          height: 720,
-        }}
+        // style={{
+        //   display: "flex",
+        //   // position: "absolute",
+        //   marginLeft: 0,
+        //   marginRight: 0,
+        //   left: 100,
+        //   right: 100,
+        //   textAlign: "center",
+        //   zindex: 9,
+        //   // width: 100,
+        //   // height: "auto",
+        // }}
       ></canvas>
-    </div>
+    </S.Container>
   );
 };
 
