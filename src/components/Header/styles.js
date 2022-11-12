@@ -1,14 +1,40 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    /* font-family: Bebas Neue; */
     width: 100%;
     height: 100px;
     background: #000000;
     border-bottom: 5px solid #891A14;
-    
-
     display: flex;
+    /* position: fixed; */
 `
+
+
+
+export const Center = styled.div`
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+
+    a, button {
+    color: #FFFFFF;
+    
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px;
+
+&:hover{
+    color: #891A14;
+    transition: 0.25s;
+}
+}
+`
+
+
+
 export const LeftSide = styled.div`
     width: 100%;
     height: 100px;
@@ -29,6 +55,9 @@ export const LeftSide = styled.div`
         }
     }
 `
+
+
+
 export const RightSide = styled.div`
     width: 50%;
     display: flex;

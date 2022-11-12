@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const Container= styled.div`
     width: 100%;
-    height: 55px;
+    height: 10px;
     background: #000000 /*#161a1e*/;
     border-top: 5px solid #891A14;
     justify-content: center;
 
-    position: fixed;
-    bottom: 0;
+    position: bottom;
+    bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@ export const Container= styled.div`
     span{
         color: gray;
         font-weight: lighter;
-        margin: 5px;
+        margin-top: 40px;
     }   
 `
 export const LeftSide = styled.div`
@@ -56,10 +56,12 @@ a, button {
     color: gray;
     font-weight: lighter;
     text-decoration: none;
-    margin: 0 10px;
+    margin-top: 40px;
+    margin-right: 10px;
 
 &:hover{
     color: #FFFFFF;
+    transition: 0.25s;
 }
 
 span {
