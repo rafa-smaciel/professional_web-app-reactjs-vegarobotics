@@ -17,7 +17,7 @@ export const Center = styled.div`
     height: 100px;
     display: flex;
     align-items: center;
-    margin-right: 180px;
+    margin-left: 0px;
 
     a, button {
     color: #FFFFFF;

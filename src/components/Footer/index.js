@@ -11,7 +11,7 @@ function Footer() {
             </S.LeftSide>
             <S.Center>
                 <img src={logo} className="App-logo" alt="logo"/>
-                <footer>Powered React</footer>
+                <footer>Powered ReactJS</footer>
             </S.Center>
             <S.RightSide>
                 <a href="mailto:vega@vegarobotics.com.br">vega@vegarobotics.com.br</a>

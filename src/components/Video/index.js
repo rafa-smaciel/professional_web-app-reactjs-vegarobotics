@@ -9,7 +9,7 @@ function Video() {
                 {/* <a>Hello World</a> */}
             </S.Text>
             <S.Video>
-                <video id="videoBanner" className="video-banner" autoPlay muted loop>
+                <video id="videoBanner" className="Video" autoPlay muted loop>
                     <source src={VideoS} type='video/mp4'></source>
                 </video>
             </S.Video>
