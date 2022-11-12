@@ -7,7 +7,7 @@ function Footer() {
     return (
         <S.Container>
             <S.LeftSide>
-                <span>® Vega Robotics. Todos os Direitos Reservados.</span> 
+                <span>® Vega Robotics. All rights reserved.</span> 
             </S.LeftSide>
             <S.Center>
                 <img src={logo} className="App-logo" alt="logo"/>

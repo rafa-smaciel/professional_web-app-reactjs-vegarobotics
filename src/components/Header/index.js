@@ -14,11 +14,11 @@ function Header() {
         </a>
       </S.LeftSide>
       <S.Center>
-        <Link to="/">Máquinas</Link>
-        <Link to="/">Componentes</Link>
-        <Link to="/">Serviços</Link>
-        <Link to="/">Suportes</Link>
-        <Link to="/">Contato</Link>
+        <Link to="/">Machines</Link>
+        <Link to="/">Components</Link>
+        <Link to="/">Services</Link>
+        <Link to="/">Support</Link>
+        <Link to="/">Contact</Link>
         <a href="https://rwelectrodes.com/" target="_blank" rel="noreferrer" >
           <span>Shop</span>
         </a>
