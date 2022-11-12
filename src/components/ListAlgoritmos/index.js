@@ -1,6 +1,5 @@
 import React from 'react';
 import * as S from './styles';
-// import PesoBruto from '../PesoBruto';
 import { Link } from 'react-router-dom';
 
 function ListAlgoritmos() {
