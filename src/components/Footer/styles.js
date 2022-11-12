@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
 export const Container= styled.div`
+    /* display: flex; */
     width: 100%;
     height: 10px;
     background: #000000 /*#161a1e*/;
     border-top: 5px solid #891A14;
-    justify-content: center;
+    /* justify-content: center; */
 
     position: bottom;
     bottom: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 
     span{
         color: gray;
