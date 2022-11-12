@@ -4,14 +4,11 @@ export const Container= styled.div`
     display: flex;
     width: 100%;
     height: 5vmin;
-    background: #000000 /*#161a1e*/;
-    /* border-top: 5px solid #891A14; */
-    /* justify-content: center; */
+    background: #161a1e;
 
     position: bottom;
     bottom: 10px;
     align-items: center;
-    /* justify-content: center; */
 
     span{
         color: gray;
@@ -24,7 +21,6 @@ export const Container= styled.div`
         font-size: 12px;
         font-weight: lighter;
         margin-top: -5px;
-        /* justify-content: center; */
         text-align: center;
     }
 `
@@ -34,7 +30,7 @@ export const Center = styled.div`
     width: 10%;
     height: 12vmin;
     pointer-events: none;
-    background: #000000;
+    background: #161a1e;
     border-radius: 100px;
     @media (prefers-reduced-motion: no-preference) {
   .App-logo {

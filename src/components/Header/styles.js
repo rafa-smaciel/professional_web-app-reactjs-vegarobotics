@@ -4,8 +4,8 @@ export const Container = styled.div`
     /* font-family: Bebas Neue; */
     width: 100%;
     height: 100px;
-    background: #000000;
-    border-bottom: 5px solid #891A14;
+    background: #161a1e;
+    /* border-bottom: 5px solid #891A14; */
     display: flex;
     /* position: fixed; */
 `
