@@ -6,13 +6,11 @@ function Footer() {
     return (
         <S.Container>
             <S.LeftSide>
-                <span>Vega Robotics 2022 - Page under Construction</span> 
+                <span>® Vega Robotics. Todos os Direitos Reservados.</span> 
             </S.LeftSide>
-            {/* <S.RightSide>
-                <a href="/vixem">
-                <img src={vixem} alt="Vixem" />
-                </a>
-            </S.RightSide> */}
+            <S.RightSide>
+                <a href="mailto:vega@vegarobotics.com.br">vega@vegarobotics.com.br</a>
+            </S.RightSide>
         </S.Container>
     )
 }

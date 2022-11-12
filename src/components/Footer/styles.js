@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container= styled.div`
     width: 100%;
     height: 55px;
-    background: #000000;
+    background: #000000 /*#161a1e*/;
     border-top: 5px solid #891A14;
     justify-content: center;
 
@@ -14,8 +14,9 @@ export const Container= styled.div`
     justify-content: center;
 
     span{
-        color: #FFF;
-        font-weight: bold;
+        color: gray;
+        font-weight: lighter;
+        margin: 5px;
     }   
 `
 export const LeftSide = styled.div`
@@ -23,22 +24,24 @@ export const LeftSide = styled.div`
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-left: 50px;
-    /* padding-top: 5px; */
+    justify-content: flex-start;
+    padding-left: 20px;
 
 img {
     width: 80px;
     height: 80px;
 }
 `
+
 export const RightSide = styled.div`
-    width: 50%;
+    width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 15px;
 
-    img {
+img {
     width: 80px;
     height: 80px;
 }
@@ -50,8 +53,8 @@ button {
 }
 
 a, button {
-    color: #FFF;
-    font-weight: bold;
+    color: gray;
+    font-weight: lighter;
     text-decoration: none;
     margin: 0 10px;
 
