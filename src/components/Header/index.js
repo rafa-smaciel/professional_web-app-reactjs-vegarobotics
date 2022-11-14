@@ -4,15 +4,15 @@ import * as S from './styles';
 
 import logo from '../../assets/VEGA_6.png';
 import whatsapp from '../../assets/whatsapp.png';
+import logoVega  from '../../assets/logoVega.svg';
 
 function Header() {
   return (
     <S.Container>
-      <S.LeftSide>
-        <a href="/">
-        <img src={logo} alt="VegaRobotics" id="logo"/>
-        </a>
-      </S.LeftSide>
+      <S.Logo href="/">
+        <img src={logoVega} alt="VegaRobotics" id="logo"/>
+      </S.Logo>
+
       <S.Center>
         <Link to="/">Machines</Link>
         <Link to="/">Components</Link>
@@ -20,14 +20,16 @@ function Header() {
         <Link to="/">Support</Link>
         <Link to="/algoritmos">Algorithms</Link>
         <Link to="/">Contact</Link>
+        
         <a href="https://rwelectrodes.com/" target="_blank" rel="noreferrer" >
           <span>Shop</span>
         </a>
         <Link to="/vixem">BETA</Link>
       </S.Center>
+
       <S.RightSide>
         <a href="https://wa.me/+551151998949" target="_blank" rel="noreferrer" >
-           <img src={whatsapp} alt="whatapp" />
+           {/* <img src={whatsapp} alt="whatapp" /> */}
         </a>
       </S.RightSide>
     </S.Container>
