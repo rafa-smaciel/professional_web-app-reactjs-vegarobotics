@@ -9,6 +9,9 @@ function ListAlgoritmos() {
         <button>
           <Link to="/pesobruto">Gross Weight Carbon Steel</Link>
         </button>
+        <button>
+          <Link to="/forcacorte">Stamping Force for Low Carbon Steel</Link>
+        </button>
       </S.Buttons>
     </S.Container>
   );
