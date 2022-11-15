@@ -7,65 +7,69 @@ export const Container = styled.nav`
     right: 0;
     
     display: flex;
-    border-bottom: 5px solid #891A14;
-    
-    width: 100%;
-    padding: 10px;
-    height: 95px;
-    background: #161a1e;
-    
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    
     /* font-family: Bebas Neue; */
+    
+    width: 100%;
+    height: 95px;
+    padding: 10px;
 
+    transition: all 300ms ease 0s;
+    
+    ${ props => props.scroll 
+        ? css`
+            background: #161a1e;
+            padding-bottom: 8px;
+            border-bottom:  2px solid #891A14;
+
+        `
+        : css `
+            background: transparent;
+            border-bottom:  none;
+        `
+    };
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 170px;
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        transition: height 300ms ease 0s;
+        background: linear-gradient(to top, 
+        rgba(0, 0, 0, 0), 
+        rgba(0, 0, 0, 0.03) 15%, 
+        rgba(0, 0, 0, 0.125) 30%, 
+        rgba(0, 0, 0, 0.25) 46%, 
+        rgba(0, 0, 0, 0.4) 61%, 
+        rgba(0, 0, 0, 0.553) 75%, 
+        rgba(0, 0, 0, 0.694) 88%, 
+        rgba(0, 0, 0, 0.8));
+        z-index: -1;
+        pointer-events: none;
+    }
+    
     z-index: 2;
 `;
 
 export const Logo = styled.a`
-    /* display: inline-block; */
-
-    /* width: 100%; */
-    /* height: 75px; */
-    /* width: 50px; */
-
-    /* align-items: center; */
-    /* padding-left: 25px; */
-    /* padding-top: 5px; */
-
-    /* margin-right: 10px; */
-
     display: inline-block;
-    /* padding: 0; */
-    /* margin: 4px 14px 5px 19px; */
-    /* max-height: 95px; */
-    /* font-size: 0; */
-    /* transition: all .2s ease 0s; */
+    
+    width: 140px;
+    min-width: 80px;
+ 
+    transition: all .2s ease 0s;
     
     img {
-        width: 110px;
-        height: 110px
-        /* display: block; */
-        /* width: 100%; */
+        max-width: 100%;
     }
 
-    ${props => props.logged &&
-        css`
-            margin: 0px 32px 0px 0px;
-        img {
-            width: 79px;
-            height: 48px;
-        }
-        `
+    &:hover {
+        opacity: .8
     }
-
-
-
-/* 
-    img {
-        width: 150px;
-        height: 150px;
-    } */
 
     /* @media (max-width: 580px){
         #logo {
@@ -77,85 +81,51 @@ export const Logo = styled.a`
 
 
 export const Center = styled.div`
-    /* width: 100%; */
-    /* height: 100px; */
-    
-    /* margin-left: 0px; */
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    max-width: 700px;
+    
+    /* font-size: .813rem; */
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    max-width: 800px;
     width: 100%;
     
+    margin: 0px 20px 0px 12px;
     
     a {
         text-decoration: none;
         color: #FFFFFF;
+        transition: all .2s ease 0s;
 
-        span {
-
-    }
-
-        
-        /* & + a { */
-            /* background: red; */
-            /* margin-left: 40px; */
-        /* } */
-        /* font-weight: bold; */
-        /* text-decoration: none; */
-        /* margin: 0 20px; */
+        & + a {
+            margin-left: 10px;
+        }
 
         &:hover{
-            transition: 0.25s;
             color: #891A14;
+            transform: scale(1.05);
         } 
-        
-        
     }
 `;
 
 
 
-export const RightSide = styled.div`
-    /* width: 50%; */
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-end; */
+export const WhatsApp = styled.a`
+    width: 30px;
+    min-width: 15px;
+    
+    margin: 0px 20px 0px .5%;
 
     img {
-        width: 50px;
-        /* height: 40px; */
-        /* padding-top: 0px; */
-        /* padding-right: 20px; */
+        width: 100%;
+        transition: all .2s ease 0s;
 
-    }
+        &:hover {
+            opacity: .8;
+        }
 
-    /* button {
-        background: none;
-        border: none;
-        cursor: pointer;
-    } */
-
-    a, button {
-        /* color: #FFF;
-        font-weight: bold;
-        text-decoration: none;
-        margin: 0 10px; */
-/* 
-    &:hover{
-        transition: opacity .3s;
-    } */
-
-    /* span {
-        background: #FFF;
-        color: #891A14;
-        padding: 3px 7px;
-        border-radius: 50%50%;
-        position: relative;
-        top: -20px;
-        right: 10px;
-    } */
     }
 `
