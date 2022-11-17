@@ -1,24 +1,13 @@
-import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React from 'react';
+import GlobalStyles from './styles/GlobalStyles';
 
-const Home = lazy(() => import('./routes/Home'));
-const Vixem = lazy(() => import('./routes/Vixem'));
-const Algoritmos = lazy(() => import('./routes/Algoritmos'));
-const PesoBruto = lazy(() => import('./routes/PesoBruto'));
+import { Routes } from './Router'
 
-function App() {
+export default function App() {
   return (
-    <Router>
-     <Suspense fallback={<div>Loading...</div>}>
-       <Routes>
-         <Route path="/" element={<Home />} />
-         <Route path="/vixem" element={<Vixem />} />
-         <Route path="/algoritmos" element={<Algoritmos />} />
-         <Route path="/pesobruto" element={<PesoBruto />} />
-       </Routes>
-      </Suspense>
-    </Router>
+    <>
+      <Routes />
+      <GlobalStyles />
+    </>
   );
 }
-
-export default App;
