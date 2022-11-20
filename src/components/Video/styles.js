@@ -8,16 +8,43 @@ export const Container = styled.div`
 export const SVideo = styled.div`
     opacity: 0.3;
     @media (min-width: 1000px){
-        #videoBanner {
-            width: 100%;
-        }
+    height: 150vh;
+    
+    /* background-size: cover; */
+`;
+
+export const Background = styled.div`
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    inset: 0px;
+`;
+
+export const Video = styled.div`
+    /* width: 135vmin; */
+    /* height: 90vmin; */
+    /* opacity: 50%; */
+    /* z-index: 2; */
+    /* align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    border-image-slice: 100%;
+    */
+    #videoBanner {
+        width: 100%;
     }
 
-    @media (max-width: 700px){
+    /* @media (min-width: 1000px){
         #videoBanner {
             width: 100%;
         }
-    }
+    } */
+
+    /* @media (max-width: 700px){
+        #videoBanner {
+            width: 100%;
+        }
+    } */
 `;
 
 export const Text = styled.div`

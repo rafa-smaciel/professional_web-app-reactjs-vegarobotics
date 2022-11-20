@@ -1,5 +1,7 @@
-import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React from 'react';
+import GlobalStyles from './styles/GlobalStyles';
+import { Routes } from './Router'
+
 
 const Home = lazy(() => import('./routes/Home'));
 const Vixem = lazy(() => import('./routes/Vixem'));
@@ -22,3 +24,13 @@ export default function App() {
     </Router>
   );
 }
+
+export default function App() {
+  return (
+    <>
+      <Routes />
+      <GlobalStyles />
+    </>
+  );
+}
+

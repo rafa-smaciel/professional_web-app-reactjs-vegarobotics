@@ -5,6 +5,7 @@ import * as S from './styles';
 function Video() {
     return (
         <S.Container>
+            <S.Background />
             <S.Text>
                 <span>Innovators in industrial automation 
                     <br/>
