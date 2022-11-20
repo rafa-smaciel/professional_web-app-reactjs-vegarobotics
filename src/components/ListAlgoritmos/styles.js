@@ -19,6 +19,10 @@ button, link {
     border-radius: 5px;
     text-decoration: none;
     display: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 
     &:hover{
     color: #891A14;
