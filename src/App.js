@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyles from './styles/GlobalStyles';
+// import GlobalStyles from './styles/GlobalStyles';
 import { Routes } from './Router'
 
 
@@ -25,12 +25,12 @@ export default function App() {
   );
 }
 
-export default function App() {
-  return (
-    <>
-      <Routes />
-      <GlobalStyles />
-    </>
-  );
-}
+// export default function App() {
+//   return (
+//     <>
+//       <Routes />
+//       <GlobalStyles />
+//     </>
+//   );
+// }
 
