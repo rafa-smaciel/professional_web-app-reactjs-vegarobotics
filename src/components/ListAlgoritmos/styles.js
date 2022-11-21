@@ -4,10 +4,11 @@ export const Container = styled.div`
     width: 100%;
     height: 100px;
     background: #FFFF;
-    display: flex;
+    
 `
 
 export const Buttons = styled.div`
+    display: column;
     margin-top: 10px;
     margin-left: 10px;
     
@@ -17,6 +18,11 @@ button, link {
     font-size: 20px;
     border-radius: 5px;
     text-decoration: none;
+    display: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 
     &:hover{
     color: #891A14;

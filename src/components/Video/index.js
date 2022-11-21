@@ -7,13 +7,15 @@ function Video() {
         <S.Container>
             <S.Background />
             <S.Text>
-                {/* <a>Hello World</a> */}
+                <span>Innovators in industrial automation 
+                    <br/>
+                        technology design and consulting</span>
             </S.Text>
-            <S.Video>
-                <video id="videoBanner" className="Video" autoPlay muted loop>
+            <S.SVideo>
+                <video id="videoBanner" className="SVideo" autoPlay muted loop>
                     <source src={VideoS} type='video/mp4'></source>
                 </video>
-            </S.Video>
+            </S.SVideo>
         </S.Container>
     );
 }
